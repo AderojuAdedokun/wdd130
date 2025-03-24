@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -19,34 +19,76 @@
 <body>
     <header>
         <img src="images/logo.png" alt="WhiteWater Rafting Logo">
+        <h1>WhiteWater Rafting</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
-            <h1>WhiteWater Rafting</h1>
+            <h1>Experience the Thrill of WhiteWater Rafting</h1>
             <article>
-                <img src="images/happyclient.jpg" alt="Happy Client">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                    vestibulum.</p>
+                <p>Join thousands of adventurers who have discovered the excitement of whitewater rafting with us.
+                    Whether you're a seasoned rafter or a first-timer, our trips are designed to provide an
+                    unforgettable experience. Our expert guides ensure your safety while you enjoy the breathtaking
+                    scenery and the thrill of conquering the rapids. From serene river floats to heart-pounding Class V
+                    rapids, we offer something for everyone. Come and
+                    create memories that will last a lifetime!</p>
+                <img src="images/happyclient.jpg" alt="Happy Client" class="happy-client">
             </article>
+            <button class="cta-button">Book Your Adventure Now</button>
         </div>
         <section>
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+            <div class="history-content">
+                <div class="text-left">
+                    <p>WhiteWater Rafting was founded in 1995 with the mission of bringing thrilling outdoor
+                        adventures
+                        to people of all ages. Over the years, we have grown from a small local operation to one of
+                        the
+                        most trusted names in rafting adventures worldwide.</p>
+                </div>
+                <img src="images/history.jpg" alt="Rafting History" class="history-image">
+                <div class="text-right">
+                    <p>Today, we operate on multiple rivers across the country, providing a variety of experiences
+                        ranging
+                        from beginner-friendly floats to adrenaline-pumping Class V rapids. We are proud to have
+                        introduced
+                        thousands of people to the joys of whitewater rafting, fostering a love for nature and
+                        adventure.</p>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Adventure Awaits You!</h2>
-            <img src="images/adventure1.jpg" alt="Adventure 1">
-            <img src="images/adventure2.jpg" alt="Adventure 2">
-            <img src="images/adventure3.jpg" alt="Adventure 3">
-            <img src="images/adventure4.jpg" alt="Adventure 4">
-            <img src="images/adventure5.jpg" alt="Adventure 5">
+            <div class="adventures">
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Paddle Adventures">
+                    <figcaption>Paddle Adventures</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Devil's Canyon">
+                    <figcaption>Devil's Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Thunder Rapids">
+                    <figcaption>Thunder Rapids</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
@@ -56,7 +98,7 @@
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
             <a href="https://whatsapp.com">
-                <img src="images/whatsapp.webp" alt="Twitter">
+                <img src="images/whatsapp.webp" alt="WhatsApp">
             </a>
             <a href="https://instagram.com">
                 <img src="images/instagram.webp" alt="Instagram">
