@@ -297,15 +297,10 @@ figcaption {
 iframe {
     width: 100%;
     max-width: 400px;
-    /* Limit the maximum width */
     height: 300px;
-    /* Set a fixed height */
     border: 1px solid #ccc;
-    /* Add a border */
     border-radius: 5px;
-    /* Add rounded corners */
     margin: 1rem auto;
-    /* Center the iframe */
     display: block;
 }
 
@@ -349,6 +344,7 @@ form button:hover {
 
 .contact-info {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     margin: 1rem 0;
     padding: 1rem;
@@ -367,31 +363,22 @@ form button:hover {
 .team {
     display: flex;
     justify-content: space-between;
-    /* Space images evenly across the line */
     align-items: center;
     gap: 1rem;
-    /* Add spacing between items */
     flex-wrap: wrap;
-    /* Ensure responsiveness on smaller screens */
 }
 
 .team figure {
     flex: 1;
-    /* Allow figures to take equal space */
     max-width: 200px;
-    /* Optional: Limit the maximum width of each figure */
     text-align: center;
 }
 
 .team img {
     width: 150px;
-    /* Fixed width */
     height: 150px;
-    /* Fixed height */
     border-radius: 50%;
-    /* Keep circular shape */
     object-fit: cover;
-    /* Ensure the image fits within the dimensions */
 }
 
 .team figcaption {
