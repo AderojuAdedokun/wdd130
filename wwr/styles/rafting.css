@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 /* CSS Validation: https://jigsaw.w3.org/css-validator/ */
 
 :root {
@@ -8,8 +10,6 @@
     --font-primary: 'Merriweather', serif;
     --font-secondary: 'Roboto', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
