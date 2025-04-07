@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/* CSS Validation: https://jigsaw.w3.org/css-validator/ */
-
 :root {
     --primary-color: #00332e;
     --secondary-color: #005f54;
     --text-color: #222;
     --background-color: #ffffff;
+    --button-color: #00796b;
+    --button-hover-color: #004d40;
     --font-primary: 'Merriweather', serif;
     --font-secondary: 'Roboto', sans-serif;
 }
@@ -197,7 +197,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #005f54;
+    background-color: var(--secondary-color);
     color: #f0f0f0;
     flex-wrap: wrap;
 }
@@ -231,6 +231,14 @@ footer .sociallinks {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+footer a {
+    color: #cce7e4;
+}
+
+footer a:hover {
+    color: white;
 }
 
 .navigation {
@@ -337,15 +345,15 @@ form button {
 }
 
 form button {
-    background-color: #005f54;
-    color: #ffffff;
+    background-color: var(--button-color);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #00332e;
+    background-color: var(--button-hover-color);
 }
 
 .contact-info {
@@ -390,4 +398,103 @@ form button:hover {
 .team figcaption {
     margin-top: 0.5rem;
     font-style: italic;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.call-to-action a {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.call-to-action a:hover {
+    background-color: var(--button-hover-color);
+}
+
+.trips-table {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.trips-table table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trips-table tr:hover {
+    background-color: #e0f7fa;
+}
+
+.trips-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-layout img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-layout p {
+    text-align: center;
+    /* Centers the text */
+    margin-top: 0.5rem;
+    /* Adds spacing above the paragraph */
+    font-size: 1rem;
+    /* Ensures consistent font size */
+    line-height: 1.5;
+    /* Improves readability */
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    /* Stacks the form elements vertically */
+    gap: 1rem;
+    /* Adds spacing between form elements */
+}
+
+.newsletter button {
+    align-self: flex-start;
+    /* Aligns the button to the left */
 }
